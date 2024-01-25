@@ -1,0 +1,74 @@
+body {
+    text-align: center;
+    background-color: #011F3F;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 3rem;
+    margin: 5%;
+}
+
+.container {
+    display: block;
+    width: 80%; /* Adjusted width for better responsiveness */
+    max-width: 600px; /* Added max-width to prevent container from becoming too wide */
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    height: 15vw; /* Responsive height based on viewport width */
+    width: 15vw; /* Responsive width based on viewport width */
+    max-height: 200px; /* Added max-height to prevent button from becoming too large */
+    max-width: 200px; /* Added max-width to prevent button from becoming too wide */
+    margin: 2.5vw; /* Adjusted margin for better spacing on smaller screens */
+    border: 10px solid black; /* Adjusted border thickness for better visibility */
+    border-radius: 20%; /* Adjusted border-radius for better appearance */
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.pressed {
+    box-shadow: 0 0 10px white; /* Adjusted box-shadow for better visibility */
+    background-color: grey;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1rem;
+    }
+    .container {
+        width: 90%; /* Adjusted width for smaller screens */
+    }
+
+    .btn {
+        height: 20vw; /* Adjusted height for smaller screens */
+        width: 20vw; /* Adjusted width for smaller screens */
+        max-height: 150px; /* Adjusted max-height for smaller screens */
+        max-width: 150px; /* Adjusted max-width for smaller screens */
+        margin: 3vw; /* Adjusted margin for smaller screens */
+    }
+}
